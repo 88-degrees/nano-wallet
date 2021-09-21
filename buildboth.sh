@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ios/
-fastlane deploy &
+fastlane deploy_ios &
 cd ../android
-fastlane deploy &
+fastlane deploy_android &
