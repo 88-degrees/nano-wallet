@@ -1,7 +1,6 @@
-# Natrium - Fast, Robust & Secure NANO Wallet
+# Natrium - NANO Wallet
 
-[![GitHub release (latest)](https://img.shields.io/github/v/release/appditto/natrium_wallet_flutter)](https://github.com/appditto/natrium_wallet_flutter/releases) [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/appditto/natrium_wallet_flutter/blob/master/LICENSE) [![Asset License](https://img.shields.io/badge/asset%20license-proprietary-orange)](https://github.com/appditto/natrium_wallet_flutter/blob/master/LICENSE) [![CI](https://github.com/appditto/natrium_wallet_flutter/workflows/CI/badge.svg)](https://github.com/appditto/natrium_wallet_flutter/actions?query=workflow%3ACI) [![Twitter Follow](https://img.shields.io/twitter/follow/NatriumIO?style=social)](https://twitter.com/intent/follow?screen_name=NatriumIO)
-
+[![GitHub release (latest)](https://img.shields.io/github/v/release/appditto/natrium_wallet_flutter)](https://github.com/88-degrees/nano-wallet/releases) [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/88-degrees/nano-wallet/blob/master/LICENSE) [![Asset License](https://img.shields.io/badge/asset%20license-proprietary-orange)](https://github.com/88-degrees/nano-wallet/blob/master/LICENSE) [![CI](https://github.com/88-degrees/nano-wallet/workflows/CI/badge.svg)](https://github.com/88-degrees/nano-wallet/actions?query=workflow%3ACI) [![Twitter Follow](https://img.shields.io/twitter/follow/NatriumIO?style=social)](https://twitter.com/intent/follow?screen_name=NatriumIO)
 
 ## What is Natrium?
 
@@ -18,7 +17,7 @@ Natrium is a cross-platform mobile wallet for the NANO cryptocurrency. It is wri
 
 ## Server
 
-Natrium's backend server can be found [here](https://github.com/appditto/natrium-wallet-server)
+Natrium's backend server can be found [here](https://github.com/88-degrees/nano-wallet-server)
 
 ## Contributing
 
