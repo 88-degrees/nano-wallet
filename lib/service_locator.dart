@@ -1,12 +1,12 @@
 import 'package:get_it/get_it.dart';
 import 'package:logger/logger.dart';
 
-import 'package:natrium_wallet_flutter/model/db/appdb.dart';
-import 'package:natrium_wallet_flutter/model/vault.dart';
-import 'package:natrium_wallet_flutter/network/account_service.dart';
-import 'package:natrium_wallet_flutter/util/hapticutil.dart';
-import 'package:natrium_wallet_flutter/util/biometrics.dart';
-import 'package:natrium_wallet_flutter/util/sharedprefsutil.dart';
+import 'package:natrium_wallet/model/db/appdb.dart';
+import 'package:natrium_wallet/model/vault.dart';
+import 'package:natrium_wallet/network/account_service.dart';
+import 'package:natrium_wallet/util/hapticutil.dart';
+import 'package:natrium_wallet/util/biometrics.dart';
+import 'package:natrium_wallet/util/sharedprefsutil.dart';
 
 GetIt sl = GetIt.instance;
 

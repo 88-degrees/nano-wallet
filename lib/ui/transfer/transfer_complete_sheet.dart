@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/app_icons.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/dimens.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/sheets.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
+import 'package:natrium_wallet/appstate_container.dart';
+import 'package:natrium_wallet/app_icons.dart';
+import 'package:natrium_wallet/localization.dart';
+import 'package:natrium_wallet/dimens.dart';
+import 'package:natrium_wallet/ui/widgets/sheets.dart';
+import 'package:natrium_wallet/ui/widgets/buttons.dart';
+import 'package:natrium_wallet/styles.dart';
 
 class AppTransferCompleteSheet {
   String transferAmount;

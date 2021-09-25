@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
+import 'package:natrium_wallet/appstate_container.dart';
+import 'package:natrium_wallet/localization.dart';
+import 'package:natrium_wallet/styles.dart';
 
 enum TransactionStateOptions { UNCONFIRMED, CONFIRMED }
 

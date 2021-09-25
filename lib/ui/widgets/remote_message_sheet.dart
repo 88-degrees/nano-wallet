@@ -1,15 +1,15 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:natrium_wallet_flutter/network/model/response/alerts_response_item.dart';
-import 'package:natrium_wallet_flutter/service_locator.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/util/caseconverter.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
+import 'package:natrium_wallet/network/model/response/alerts_response_item.dart';
+import 'package:natrium_wallet/service_locator.dart';
+import 'package:natrium_wallet/styles.dart';
+import 'package:natrium_wallet/util/caseconverter.dart';
+import 'package:natrium_wallet/localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:natrium_wallet_flutter/dimens.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/util/sharedprefsutil.dart';
+import 'package:natrium_wallet/dimens.dart';
+import 'package:natrium_wallet/ui/widgets/buttons.dart';
+import 'package:natrium_wallet/appstate_container.dart';
+import 'package:natrium_wallet/util/sharedprefsutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class RemoteMessageSheet extends StatefulWidget {

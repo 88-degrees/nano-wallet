@@ -3,13 +3,13 @@ import 'dart:math';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/app_icons.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/service_locator.dart';
-import 'package:natrium_wallet_flutter/util/hapticutil.dart';
-import 'package:natrium_wallet_flutter/util/sharedprefsutil.dart';
+import 'package:natrium_wallet/appstate_container.dart';
+import 'package:natrium_wallet/localization.dart';
+import 'package:natrium_wallet/app_icons.dart';
+import 'package:natrium_wallet/styles.dart';
+import 'package:natrium_wallet/service_locator.dart';
+import 'package:natrium_wallet/util/hapticutil.dart';
+import 'package:natrium_wallet/util/sharedprefsutil.dart';
 
 enum PinOverlayType { NEW_PIN, ENTER_PIN }
 

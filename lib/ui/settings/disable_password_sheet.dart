@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:keyboard_avoider/keyboard_avoider.dart';
 import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/dimens.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/model/vault.dart';
-import 'package:natrium_wallet_flutter/service_locator.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/ui/util/ui_util.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/app_text_field.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/tap_outside_unfocus.dart';
-import 'package:natrium_wallet_flutter/util/caseconverter.dart';
+import 'package:natrium_wallet/appstate_container.dart';
+import 'package:natrium_wallet/dimens.dart';
+import 'package:natrium_wallet/localization.dart';
+import 'package:natrium_wallet/model/vault.dart';
+import 'package:natrium_wallet/service_locator.dart';
+import 'package:natrium_wallet/styles.dart';
+import 'package:natrium_wallet/ui/util/ui_util.dart';
+import 'package:natrium_wallet/ui/widgets/app_text_field.dart';
+import 'package:natrium_wallet/ui/widgets/buttons.dart';
+import 'package:natrium_wallet/ui/widgets/tap_outside_unfocus.dart';
+import 'package:natrium_wallet/util/caseconverter.dart';
 
 class DisablePasswordSheet extends StatefulWidget {
   _DisablePasswordSheetState createState() => _DisablePasswordSheetState();

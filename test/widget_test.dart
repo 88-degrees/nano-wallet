@@ -7,8 +7,8 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:natrium_wallet_flutter/main.dart';
-import 'package:natrium_wallet_flutter/ui/intro/intro_welcome.dart';
+import 'package:natrium_wallet/main.dart';
+import 'package:natrium_wallet/ui/intro/intro_welcome.dart';
 
 // TODO - we can probably do with some proper widget testing
 

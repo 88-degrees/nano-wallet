@@ -1,8 +1,8 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/ui/util/exceptions.dart';
+import 'package:natrium_wallet/appstate_container.dart';
+import 'package:natrium_wallet/styles.dart';
+import 'package:natrium_wallet/ui/util/exceptions.dart';
 
 enum AppButtonType {
   PRIMARY,
