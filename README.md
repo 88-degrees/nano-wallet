@@ -1,6 +1,8 @@
 # Natrium - NANO Wallet
 
-[![GitHub release (latest)](https://img.shields.io/github/v/release/88oio/natrium_wallet)](https://github.com/88-degrees/nano-wallet/releases) [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/88-degrees/nano-wallet/blob/master/LICENSE) [![Asset License](https://img.shields.io/badge/asset%20license-proprietary-orange)](https://github.com/88-degrees/nano-wallet/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/88-degrees/nano-wallet/blob/master/LICENSE) [![Asset License](https://img.shields.io/badge/asset%20license-proprietary-orange)](https://github.com/88-degrees/nano-wallet/blob/master/LICENSE)
+
+[![Natrium on Apple App Store](https://user-images.githubusercontent.com/551004/29770691-a2082ff4-8bc6-11e7-89a6-964cd405ea8e.png)](https://itunes.apple.com/us/app/natrium/id1451425707?ls=1&mt=8) [![Natrium on Google Play](https://user-images.githubusercontent.com/551004/29770692-a20975c6-8bc6-11e7-8ab0-1cde275496e0.png)](https://play.google.com/store/apps/details?id=co.banano.natriumwallet)
 
 ## What is Natrium?
 
