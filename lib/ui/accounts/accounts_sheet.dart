@@ -408,8 +408,16 @@ class _AppAccountsWidgetState extends State<AppAccountsWidget> {
                                         width: 64.0,
                                         height: 64.0,
                                         child: SvgPicture.network(
-                                          UIUtil.getNatriconURL(account.address, StateContainer.of(context).getNatriconNonce(account.address)),
-                                          key: Key(UIUtil.getNatriconURL(account.address, StateContainer.of(context).getNatriconNonce(account.address))),
+                                          UIUtil.getNatriconURL(
+                                              account.address,
+                                              StateContainer.of(context)
+                                                  .getNatriconNonce(
+                                                      account.address)),
+                                          key: Key(UIUtil.getNatriconURL(
+                                              account.address,
+                                              StateContainer.of(context)
+                                                  .getNatriconNonce(
+                                                      account.address))),
                                           placeholderBuilder:
                                               (BuildContext context) =>
                                                   Container(
@@ -523,35 +531,28 @@ class _AppAccountsWidgetState extends State<AppAccountsWidget> {
                               child: AutoSizeText.rich(
                                 TextSpan(
                                   children: [
-                                    // Currency Icon
+                                    // Main balance text
                                     TextSpan(
-                                      text: account.balance != null ? "" : "",
+                                      text: (account.balance != null
+                                              ? "Ӿ"
+                                              : "") +
+                                          (account.balance != null &&
+                                                  !account.selected
+                                              ? NumberUtil.getRawAsUsableString(
+                                                  account.balance)
+                                              : account.selected
+                                                  ? StateContainer.of(context)
+                                                      .wallet
+                                                      .getAccountBalanceDisplay()
+                                                  : ""),
                                       style: TextStyle(
-                                        fontFamily: 'AppIcons',
+                                        fontSize: 16.0,
+                                        fontFamily: "NunitoSans",
+                                        fontWeight: FontWeight.w900,
                                         color: StateContainer.of(context)
                                             .curTheme
                                             .text,
-                                        fontSize: 15.0,
                                       ),
-                                    ),
-                                    // Main balance text
-                                    TextSpan(
-                                      text: account.balance != null &&
-                                              !account.selected
-                                          ? NumberUtil.getRawAsUsableString(
-                                              account.balance)
-                                          : account.selected
-                                              ? StateContainer.of(context)
-                                                  .wallet
-                                                  .getAccountBalanceDisplay()
-                                              : "",
-                                      style: TextStyle(
-                                          fontSize: 16.0,
-                                          fontFamily: "NunitoSans",
-                                          fontWeight: FontWeight.w900,
-                                          color: StateContainer.of(context)
-                                              .curTheme
-                                              .text),
                                     ),
                                   ],
                                 ),

@@ -272,7 +272,11 @@ class AppAlertDialog extends StatelessWidget {
             EdgeInsetsDirectional.fromSTEB(
                 24.0, 24.0, 24.0, content == null ? 20.0 : 0.0),
         child: DefaultTextStyle(
+<<<<<<< HEAD
           style: Theme.of(context).textTheme.caption,
+=======
+          style: Theme.of(context).textTheme.headline1,
+>>>>>>> 0bf6c6670b3cfe50b3d33b8158b7b04464a40a75
           child: Semantics(child: title, namesRoute: true),
         ),
       ));
@@ -536,7 +540,11 @@ class AppSimpleDialog extends StatelessWidget {
       body.add(Padding(
           padding: titlePadding,
           child: DefaultTextStyle(
+<<<<<<< HEAD
             style: Theme.of(context).textTheme.caption,
+=======
+            style: Theme.of(context).textTheme.headline1,
+>>>>>>> 0bf6c6670b3cfe50b3d33b8158b7b04464a40a75
             child: Semantics(namesRoute: true, child: title),
           )));
     } else {
