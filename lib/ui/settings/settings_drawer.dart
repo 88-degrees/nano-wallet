@@ -333,8 +333,8 @@ class _SettingsSheetState extends State<SettingsSheet>
             _curNotificiationSetting =
                 NotificationSetting(NotificationOptions.ON);
           });
-          FirebaseMessaging().requestNotificationPermissions();
-          FirebaseMessaging().getToken().then((fcmToken) {
+          FirebaseMessaging.instance.requestPermission();
+          FirebaseMessaging.instance.getToken().then((fcmToken) {
             EventTaxiImpl.singleton().fire(FcmUpdateEvent(token: fcmToken));
           });
         });
@@ -345,7 +345,7 @@ class _SettingsSheetState extends State<SettingsSheet>
             _curNotificiationSetting =
                 NotificationSetting(NotificationOptions.OFF);
           });
-          FirebaseMessaging().getToken().then((fcmToken) {
+          FirebaseMessaging.instance.getToken().then((fcmToken) {
             EventTaxiImpl.singleton().fire(FcmUpdateEvent(token: fcmToken));
           });
         });
@@ -1651,8 +1651,12 @@ class _SettingsSheetState extends State<SettingsSheet>
                           sl
                               .get<SharedPrefsUtil>()
                               .setNotificationsOn(false)
-                              .then((_) {
-                            FirebaseMessaging().getToken().then((fcmToken) {
+                              .then((_) async {
+                            try {
+                              String fcmToken =
+                                  await FirebaseMessaging.instance.getToken();
+                              EventTaxiImpl.singleton()
+                                  .fire(FcmUpdateEvent(token: fcmToken));
                               EventTaxiImpl.singleton()
                                   .fire(FcmUpdateEvent(token: fcmToken));
                               // Delete all data
@@ -1666,7 +1670,7 @@ class _SettingsSheetState extends State<SettingsSheet>
                                       '/', (Route<dynamic> route) => false);
                                 });
                               });
-                            });
+                            } catch (e) {}
                           });
                         });
                       });

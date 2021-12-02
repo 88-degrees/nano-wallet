@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -46,6 +47,8 @@ void main() async {
   } else {
     Logger.level = Level.debug;
   }
+  // Setup firebase
+  await Firebase.initializeApp();
   // Run app
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
       .then((_) {
@@ -129,6 +132,7 @@ class _AppState extends State<App> {
               languageCode: 'zh', scriptCode: 'Hant'), // Chinese Traditional
           const Locale('ar'), // Arabic
           const Locale('lv'), // Latvian
+          const Locale('bn'), // Bengali
           // Currency-default requires country included
           const Locale("es", "AR"),
           const Locale("en", "AU"),
@@ -191,6 +195,8 @@ class _AppState extends State<App> {
           const Locale("ar", "KW"), // Kuwait
           const Locale("uk", "UA"), // Ukraine
           const Locale("no", "NO"), // Norway
+          const Locale("bn", "BD"), // Bangladesh
+          const Locale("bn", "IN"), // India/Bengali
         ],
         initialRoute: '/',
         onGenerateRoute: (RouteSettings settings) {
