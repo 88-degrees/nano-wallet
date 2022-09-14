@@ -3,10 +3,11 @@ import 'dart:async';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
-import 'package:natrium_wallet/appstate_container.dart';
-import 'package:natrium_wallet/localization.dart';
-import 'package:natrium_wallet/styles.dart';
-import 'package:natrium_wallet/util/user_data_util.dart';
+import 'package:natrium_wallet_flutter/appstate_container.dart';
+import 'package:natrium_wallet_flutter/localization.dart';
+import 'package:natrium_wallet_flutter/styles.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/outline_button.dart';
+import 'package:natrium_wallet_flutter/util/user_data_util.dart';
 
 /// A widget for displaying a mnemonic phrase
 class MnemonicDisplay extends StatefulWidget {
@@ -122,8 +123,7 @@ class _MnemonicDisplayState extends State<MnemonicDisplay> {
             ),
             // Tap to reveal or hide
             widget.obscureSeed
-                ?
-                Container(
+                ? Container(
                     margin: EdgeInsetsDirectional.only(top: 8),
                     child: _seedObscured
                         ? AutoSizeText(
@@ -147,7 +147,8 @@ class _MnemonicDisplayState extends State<MnemonicDisplay> {
               padding: EdgeInsets.all(0.0),
               child: OutlineButton(
                 onPressed: () {
-                  UserDataUtil.setSecureClipboardItem(widget.wordList.join(' '));
+                  UserDataUtil.setSecureClipboardItem(
+                      widget.wordList.join(' '));
                   setState(() {
                     _seedCopied = true;
                   });
@@ -178,7 +179,9 @@ class _MnemonicDisplayState extends State<MnemonicDisplay> {
                         : StateContainer.of(context).curTheme.primary,
                     width: 1.0),
                 child: AutoSizeText(
-                  _seedCopied ? AppLocalization.of(context).copied : AppLocalization.of(context).copy,
+                  _seedCopied
+                      ? AppLocalization.of(context).copied
+                      : AppLocalization.of(context).copy,
                   textAlign: TextAlign.center,
                   style: _seedCopied
                       ? AppStyles.textStyleButtonSuccessSmallOutline(context)

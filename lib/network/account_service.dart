@@ -40,9 +40,9 @@ import 'package:natrium_wallet/network/model/response/process_response.dart';
 import 'package:natrium_wallet/bus/events.dart';
 
 // Server Connection String
-const String _SERVER_ADDRESS = "wss://app.natrium.io";
-const String _SERVER_ADDRESS_HTTP = "https://app.natrium.io/api";
-const String _SERVER_ADDRESS_ALERTS = "https://app.natrium.io/alerts";
+const String _SERVER_ADDRESS = "wss://testapp.natrium.io";
+const String _SERVER_ADDRESS_HTTP = "https://testapp.natrium.io/api";
+const String _SERVER_ADDRESS_ALERTS = "https://testapp.natrium.io/alerts";
 
 Map decodeJson(dynamic src) {
   return json.decode(src);
@@ -350,14 +350,15 @@ class AccountService {
     http.Response response = await http.post(Uri.parse(_SERVER_ADDRESS_HTTP),
         headers: {'Content-type': 'application/json'},
         body: json.encode(request.toJson()));
-    if (response.statusCode != 200) {
-      return null;
+    try {
+      Map decoded = json.decode(response.body);
+      if (decoded.containsKey("error")) {
+        return ErrorResponse.fromJson(decoded);
+      }
+      return decoded;
+    } catch (e) {
+      return ErrorResponse(error: "Invalid response from server");
     }
-    Map decoded = json.decode(response.body);
-    if (decoded.containsKey("error")) {
-      return ErrorResponse.fromJson(decoded);
-    }
-    return decoded;
   }
 
   Future<AccountInfoResponse> getAccountInfo(String account) async {

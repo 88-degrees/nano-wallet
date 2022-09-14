@@ -4,10 +4,11 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:natrium_wallet/ui/util/ui_util.dart';
 
-import 'package:natrium_wallet/appstate_container.dart';
-import 'package:natrium_wallet/localization.dart';
-import 'package:natrium_wallet/styles.dart';
-import 'package:natrium_wallet/util/user_data_util.dart';
+import 'package:natrium_wallet_flutter/appstate_container.dart';
+import 'package:natrium_wallet_flutter/localization.dart';
+import 'package:natrium_wallet_flutter/styles.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/outline_button.dart';
+import 'package:natrium_wallet_flutter/util/user_data_util.dart';
 
 /// A widget for displaying a mnemonic phrase
 class PlainSeedDisplay extends StatefulWidget {
@@ -139,7 +140,9 @@ class _PlainSeedDisplayState extends State<PlainSeedDisplay> {
                           : StateContainer.of(context).curTheme.primary,
                       width: 1.0),
                   child: AutoSizeText(
-                    _seedCopied ? AppLocalization.of(context).copied : AppLocalization.of(context).copy,
+                    _seedCopied
+                        ? AppLocalization.of(context).copied
+                        : AppLocalization.of(context).copy,
                     textAlign: TextAlign.center,
                     style: _seedCopied
                         ? AppStyles.textStyleButtonSuccessSmallOutline(context)
