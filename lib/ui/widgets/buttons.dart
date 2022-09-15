@@ -1,9 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/ui/util/exceptions.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/outline_button.dart';
+import 'package:natrium_wallet/appstate_container.dart';
+import 'package:natrium_wallet/styles.dart';
+import 'package:natrium_wallet/ui/util/exceptions.dart';
+import 'package:natrium_wallet/ui/widgets/outline_button.dart';
 
 enum AppButtonType {
   PRIMARY,
@@ -29,12 +29,12 @@ class AppButton {
             height: 55,
             margin: EdgeInsetsDirectional.fromSTEB(
                 dimens[0], dimens[1], dimens[2], dimens[3]),
-            child: FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(100.0)),
-              color: disabled
-                  ? StateContainer.of(context).curTheme.primary60
-                  : StateContainer.of(context).curTheme.primary,
+            child: TextButton(
+              // shape: RoundedRectangleBorder(
+              //     borderRadius: BorderRadius.circular(100.0)),
+              // color: disabled
+              //     ? StateContainer.of(context).curTheme.primary60
+              //     : StateContainer.of(context).curTheme.primary,
               child: AutoSizeText(buttonText,
                   textAlign: TextAlign.center,
                   style: AppStyles.textStyleButtonPrimary(context),
@@ -46,8 +46,8 @@ class AppButton {
                 }
                 return;
               },
-              highlightColor: StateContainer.of(context).curTheme.background40,
-              splashColor: StateContainer.of(context).curTheme.background40,
+              // highlightColor: StateContainer.of(context).curTheme.background40,
+              // splashColor: StateContainer.of(context).curTheme.background40,
             ),
           ),
         );
@@ -107,10 +107,10 @@ class AppButton {
             height: 55,
             margin: EdgeInsetsDirectional.fromSTEB(
                 dimens[0], dimens[1], dimens[2], dimens[3]),
-            child: FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(100.0)),
-              color: StateContainer.of(context).curTheme.success,
+            child: TextButton(
+              // shape: RoundedRectangleBorder(
+              //     borderRadius: BorderRadius.circular(100.0)),
+              // color: StateContainer.of(context).curTheme.success,
               child: AutoSizeText(
                 buttonText,
                 textAlign: TextAlign.center,
@@ -124,8 +124,8 @@ class AppButton {
                 }
                 return;
               },
-              highlightColor: StateContainer.of(context).curTheme.success30,
-              splashColor: StateContainer.of(context).curTheme.successDark,
+              // highlightColor: StateContainer.of(context).curTheme.success30,
+              // splashColor: StateContainer.of(context).curTheme.successDark,
             ),
           ),
         );

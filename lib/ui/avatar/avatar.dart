@@ -132,7 +132,7 @@ class _AvatarPageState extends State<AvatarPage>
                                       ),
                                     ),
                                     /* // Button for the interaction
-                                    FlatButton(
+                                    TextButton(
                                       onPressed: () {
                                         Navigator.of(context).pop();
                                       },

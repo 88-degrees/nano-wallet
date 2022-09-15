@@ -230,9 +230,9 @@ class _AppLockScreenState extends State<AppLockScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: <Widget>[
-                          FlatButton(
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(100)),
+                          TextButton(
+                            // shape: RoundedRectangleBorder(
+                            //     borderRadius: BorderRadius.circular(100)),
                             onPressed: () {
                               AppDialogs.showConfirmDialog(
                                   context,
@@ -282,12 +282,12 @@ class _AppLockScreenState extends State<AppLockScreen> {
                                 });
                               });
                             },
-                            highlightColor:
-                                StateContainer.of(context).curTheme.text15,
-                            splashColor:
-                                StateContainer.of(context).curTheme.text30,
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                            // highlightColor:
+                            //     StateContainer.of(context).curTheme.text15,
+                            // splashColor:
+                            //     StateContainer.of(context).curTheme.text30,
+                            // padding:
+                            //     EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
                             child: Container(
                               child: Row(
                                 children: <Widget>[

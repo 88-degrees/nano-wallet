@@ -14,19 +14,19 @@ class TextFieldButton extends StatelessWidget {
     return Container(
       height: 48,
       width: 48,
-      child: FlatButton(
-        padding: EdgeInsets.all(14.0),
-        highlightColor:
-            StateContainer.of(context).curTheme.primary15,
-        splashColor: StateContainer.of(context).curTheme.primary30,
+      child: TextButton(
+        // padding: EdgeInsets.all(14.0),
+        // highlightColor:
+        //     StateContainer.of(context).curTheme.primary15,
+        // splashColor: StateContainer.of(context).curTheme.primary30,
         onPressed: () {
           onPressed != null ? onPressed() : null;
         },
         child: Icon(icon,
             size: 20,
             color: StateContainer.of(context).curTheme.primary),
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(200.0)),
+        // shape: RoundedRectangleBorder(
+        //     borderRadius: BorderRadius.circular(200.0)),
       )
     );
   }

@@ -110,9 +110,9 @@ class AppChangeRepresentativeSheet {
             height: 2,
             color: StateContainer.of(context).curTheme.text15,
           ),
-          FlatButton(
-            highlightColor: StateContainer.of(context).curTheme.text15,
-            splashColor: StateContainer.of(context).curTheme.text15,
+          TextButton(
+            // highlightColor: StateContainer.of(context).curTheme.text15,
+            // splashColor: StateContainer.of(context).curTheme.text15,
             onPressed: () async {
               if (!NanoAccounts.isValid(NanoAccountType.NANO, rep.account)) {
                 return;
@@ -142,7 +142,7 @@ class AppChangeRepresentativeSheet {
                 await authenticateWithPin(rep.account, context);
               }
             },
-            padding: EdgeInsets.all(0),
+            // padding: EdgeInsets.all(0),
             child: Container(
               margin: EdgeInsets.symmetric(vertical: 20),
               child: Row(
@@ -393,13 +393,13 @@ class AppChangeRepresentativeSheet {
                                 height: 50,
                                 margin: EdgeInsetsDirectional.only(
                                     top: 10.0, end: 10.0),
-                                child: FlatButton(
-                                  highlightColor: StateContainer.of(context)
-                                      .curTheme
-                                      .text15,
-                                  splashColor: StateContainer.of(context)
-                                      .curTheme
-                                      .text15,
+                                child: TextButton(
+                                  // highlightColor: StateContainer.of(context)
+                                  //     .curTheme
+                                  //     .text15,
+                                  // splashColor: StateContainer.of(context)
+                                  //     .curTheme
+                                  //     .text15,
                                   onPressed: () {
                                     AppDialogs.showInfoDialog(
                                         context,
@@ -412,12 +412,12 @@ class AppChangeRepresentativeSheet {
                                       color: StateContainer.of(context)
                                           .curTheme
                                           .text),
-                                  padding: EdgeInsets.all(13.0),
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius:
-                                          BorderRadius.circular(100.0)),
-                                  materialTapTargetSize:
-                                      MaterialTapTargetSize.padded,
+                                  // padding: EdgeInsets.all(13.0),
+                                  // shape: RoundedRectangleBorder(
+                                  //     borderRadius:
+                                  //         BorderRadius.circular(100.0)),
+                                  // materialTapTargetSize:
+                                  //     MaterialTapTargetSize.padded,
                                 ),
                               ),
                             ],

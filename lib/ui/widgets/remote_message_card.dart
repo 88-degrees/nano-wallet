@@ -36,12 +36,12 @@ class _RemoteMessageCardState extends State<RemoteMessageCard> {
           color: StateContainer.of(context).curTheme.success,
         ),
       ),
-      child: FlatButton(
-        padding: EdgeInsets.all(0),
-        highlightColor:
-            StateContainer.of(context).curTheme.success.withOpacity(0.15),
-        splashColor:
-            StateContainer.of(context).curTheme.success.withOpacity(0.15),
+      child: TextButton(
+        // padding: EdgeInsets.all(0),
+        // highlightColor:
+        //     StateContainer.of(context).curTheme.success.withOpacity(0.15),
+        // splashColor:
+        //     StateContainer.of(context).curTheme.success.withOpacity(0.15),
         onPressed: widget.onPressed,
         child: Container(
           width: double.infinity,

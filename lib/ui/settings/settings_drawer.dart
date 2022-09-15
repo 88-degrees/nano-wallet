@@ -831,18 +831,18 @@ class _SettingsSheetState extends State<SettingsSheet>
                                     child: Container(
                                       width: 64,
                                       height: 64,
-                                      child: FlatButton(
-                                        shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(100.0)),
-                                        highlightColor:
-                                            StateContainer.of(context)
-                                                .curTheme
-                                                .text15,
-                                        splashColor: StateContainer.of(context)
-                                            .curTheme
-                                            .text15,
-                                        padding: EdgeInsets.all(0.0),
+                                      child: TextButton(
+                                        // shape: RoundedRectangleBorder(
+                                        //     borderRadius:
+                                        //         BorderRadius.circular(100.0)),
+                                        // highlightColor:
+                                        //     StateContainer.of(context)
+                                        //         .curTheme
+                                        //         .text15,
+                                        // splashColor: StateContainer.of(context)
+                                        //     .curTheme
+                                        //     .text15,
+                                        // padding: EdgeInsets.all(0.0),
                                         child: SizedBox(
                                           width: 60,
                                           height: 60,
@@ -902,17 +902,17 @@ class _SettingsSheetState extends State<SettingsSheet>
                                     child: Container(
                                       width: 60,
                                       height: 45,
-                                      child: FlatButton(
-                                        highlightColor:
-                                            StateContainer.of(context)
-                                                .curTheme
-                                                .backgroundDark
-                                                .withOpacity(0.75),
-                                        splashColor: StateContainer.of(context)
-                                            .curTheme
-                                            .backgroundDark
-                                            .withOpacity(0.75),
-                                        padding: EdgeInsets.all(0.0),
+                                      child: TextButton(
+                                        // highlightColor:
+                                        //     StateContainer.of(context)
+                                        //         .curTheme
+                                        //         .backgroundDark
+                                        //         .withOpacity(0.75),
+                                        // splashColor: StateContainer.of(context)
+                                        //     .curTheme
+                                        //     .backgroundDark
+                                        //     .withOpacity(0.75),
+                                        // padding: EdgeInsets.all(0.0),
                                         child: SizedBox(
                                           width: 60,
                                           height: 45,
@@ -985,7 +985,7 @@ class _SettingsSheetState extends State<SettingsSheet>
                                               width: 52,
                                               height: 52,
                                               color: Colors.transparent,
-                                              child: FlatButton(
+                                              child: TextButton(
                                                 onPressed: () {
                                                   sl
                                                       .get<DBHelper>()
@@ -1003,19 +1003,19 @@ class _SettingsSheetState extends State<SettingsSheet>
                                                             delayPop: true));
                                                   });
                                                 },
-                                                shape: RoundedRectangleBorder(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            100.0)),
-                                                highlightColor:
-                                                    StateContainer.of(context)
-                                                        .curTheme
-                                                        .text15,
-                                                splashColor:
-                                                    StateContainer.of(context)
-                                                        .curTheme
-                                                        .text15,
-                                                padding: EdgeInsets.all(0.0),
+                                                // shape: RoundedRectangleBorder(
+                                                //     borderRadius:
+                                                //         BorderRadius.circular(
+                                                //             100.0)),
+                                                // highlightColor:
+                                                //     StateContainer.of(context)
+                                                //         .curTheme
+                                                //         .text15,
+                                                // splashColor:
+                                                //     StateContainer.of(context)
+                                                //         .curTheme
+                                                //         .text15,
+                                                // padding: EdgeInsets.all(0.0),
                                                 child: Container(
                                                   width: 52,
                                                   height: 52,
@@ -1067,7 +1067,7 @@ class _SettingsSheetState extends State<SettingsSheet>
                                               width: 48,
                                               height: 36,
                                               color: Colors.transparent,
-                                              child: FlatButton(
+                                              child: TextButton(
                                                 onPressed: () {
                                                   sl
                                                       .get<DBHelper>()
@@ -1085,17 +1085,17 @@ class _SettingsSheetState extends State<SettingsSheet>
                                                             delayPop: true));
                                                   });
                                                 },
-                                                highlightColor:
-                                                    StateContainer.of(context)
-                                                        .curTheme
-                                                        .backgroundDark
-                                                        .withOpacity(0.75),
-                                                splashColor:
-                                                    StateContainer.of(context)
-                                                        .curTheme
-                                                        .backgroundDark
-                                                        .withOpacity(0.75),
-                                                padding: EdgeInsets.all(0.0),
+                                                // highlightColor:
+                                                //     StateContainer.of(context)
+                                                //         .curTheme
+                                                //         .backgroundDark
+                                                //         .withOpacity(0.75),
+                                                // splashColor:
+                                                //     StateContainer.of(context)
+                                                //         .curTheme
+                                                //         .backgroundDark
+                                                //         .withOpacity(0.75),
+                                                // padding: EdgeInsets.all(0.0),
                                                 child: Container(
                                                   width: 48,
                                                   height: 36,
@@ -1161,7 +1161,7 @@ class _SettingsSheetState extends State<SettingsSheet>
                                               width: 52,
                                               height: 52,
                                               color: Colors.transparent,
-                                              child: FlatButton(
+                                              child: TextButton(
                                                 onPressed: () {
                                                   sl
                                                       .get<DBHelper>()
@@ -1178,19 +1178,19 @@ class _SettingsSheetState extends State<SettingsSheet>
                                                             delayPop: true));
                                                   });
                                                 },
-                                                shape: RoundedRectangleBorder(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            100.0)),
-                                                highlightColor:
-                                                    StateContainer.of(context)
-                                                        .curTheme
-                                                        .text15,
-                                                splashColor:
-                                                    StateContainer.of(context)
-                                                        .curTheme
-                                                        .text15,
-                                                padding: EdgeInsets.all(0.0),
+                                                // shape: RoundedRectangleBorder(
+                                                //     borderRadius:
+                                                //         BorderRadius.circular(
+                                                //             100.0)),
+                                                // highlightColor:
+                                                //     StateContainer.of(context)
+                                                //         .curTheme
+                                                //         .text15,
+                                                // splashColor:
+                                                //     StateContainer.of(context)
+                                                //         .curTheme
+                                                //         .text15,
+                                                // padding: EdgeInsets.all(0.0),
                                                 child: Container(
                                                   width: 52,
                                                   height: 52,
@@ -1242,7 +1242,7 @@ class _SettingsSheetState extends State<SettingsSheet>
                                               width: 48,
                                               height: 36,
                                               color: Colors.transparent,
-                                              child: FlatButton(
+                                              child: TextButton(
                                                 onPressed: () {
                                                   sl
                                                       .get<DBHelper>()
@@ -1259,17 +1259,17 @@ class _SettingsSheetState extends State<SettingsSheet>
                                                             delayPop: true));
                                                   });
                                                 },
-                                                highlightColor:
-                                                    StateContainer.of(context)
-                                                        .curTheme
-                                                        .backgroundDark
-                                                        .withOpacity(0.75),
-                                                splashColor:
-                                                    StateContainer.of(context)
-                                                        .curTheme
-                                                        .backgroundDark
-                                                        .withOpacity(0.75),
-                                                padding: EdgeInsets.all(0.0),
+                                                // highlightColor:
+                                                //     StateContainer.of(context)
+                                                //         .curTheme
+                                                //         .backgroundDark
+                                                //         .withOpacity(0.75),
+                                                // splashColor:
+                                                //     StateContainer.of(context)
+                                                //         .curTheme
+                                                //         .backgroundDark
+                                                //         .withOpacity(0.75),
+                                                // padding: EdgeInsets.all(0.0),
                                                 child: Container(
                                                   width: 48,
                                                   height: 36,
@@ -1290,7 +1290,7 @@ class _SettingsSheetState extends State<SettingsSheet>
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                             ),
-                            child: FlatButton(
+                            child: TextButton(
                               onPressed: () {
                                 if (!_loadingAccounts) {
                                   setState(() {
@@ -1312,14 +1312,14 @@ class _SettingsSheetState extends State<SettingsSheet>
                                   });
                                 }
                               },
-                              padding: EdgeInsets.all(0.0),
-                              shape: CircleBorder(),
-                              splashColor: _loadingAccounts
-                                  ? Colors.transparent
-                                  : StateContainer.of(context).curTheme.text30,
-                              highlightColor: _loadingAccounts
-                                  ? Colors.transparent
-                                  : StateContainer.of(context).curTheme.text15,
+                              // padding: EdgeInsets.all(0.0),
+                              // shape: CircleBorder(),
+                              // splashColor: _loadingAccounts
+                              //     ? Colors.transparent
+                              //     : StateContainer.of(context).curTheme.text30,
+                              // highlightColor: _loadingAccounts
+                              //     ? Colors.transparent
+                              //     : StateContainer.of(context).curTheme.text15,
                               child: Icon(AppIcons.accountswitcher,
                                   size: 36,
                                   color: _loadingAccounts
@@ -1337,13 +1337,13 @@ class _SettingsSheetState extends State<SettingsSheet>
                   ),
                   Container(
                     margin: EdgeInsets.only(top: 2),
-                    child: FlatButton(
-                      padding: EdgeInsets.all(4.0),
-                      highlightColor:
-                          StateContainer.of(context).curTheme.text15,
-                      splashColor: StateContainer.of(context).curTheme.text30,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6.0)),
+                    child: TextButton(
+                      // padding: EdgeInsets.all(4.0),
+                      // highlightColor:
+                      //     StateContainer.of(context).curTheme.text15,
+                      // splashColor: StateContainer.of(context).curTheme.text30,
+                      // shape: RoundedRectangleBorder(
+                      //     borderRadius: BorderRadius.circular(6.0)),
                       onPressed: () {
                         AccountDetailsSheet(
                                 StateContainer.of(context).selectedAccount)
@@ -1774,20 +1774,20 @@ class _SettingsSheetState extends State<SettingsSheet>
                         height: 40,
                         width: 40,
                         margin: EdgeInsets.only(right: 10, left: 10),
-                        child: FlatButton(
-                            highlightColor:
-                                StateContainer.of(context).curTheme.text15,
-                            splashColor:
-                                StateContainer.of(context).curTheme.text15,
+                        child: TextButton(
+                            // highlightColor:
+                            //     StateContainer.of(context).curTheme.text15,
+                            // splashColor:
+                            //     StateContainer.of(context).curTheme.text15,
                             onPressed: () {
                               setState(() {
                                 _securityOpen = false;
                               });
                               _securityController.reverse();
                             },
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(50.0)),
-                            padding: EdgeInsets.all(8.0),
+                            // shape: RoundedRectangleBorder(
+                            //     borderRadius: BorderRadius.circular(50.0)),
+                            // padding: EdgeInsets.all(8.0),
                             child: Icon(AppIcons.back,
                                 color: StateContainer.of(context).curTheme.text,
                                 size: 24)),

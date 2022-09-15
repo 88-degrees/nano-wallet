@@ -81,15 +81,15 @@ class AccountDetailsSheet {
                                         top: 10.0, start: 10.0),
                                     child: account.index == 0
                                         ? SizedBox()
-                                        : FlatButton(
-                                            highlightColor:
-                                                StateContainer.of(context)
-                                                    .curTheme
-                                                    .text15,
-                                            splashColor:
-                                                StateContainer.of(context)
-                                                    .curTheme
-                                                    .text15,
+                                        : TextButton(
+                                            // highlightColor:
+                                            //     StateContainer.of(context)
+                                            //         .curTheme
+                                            //         .text15,
+                                            // splashColor:
+                                            //     StateContainer.of(context)
+                                            //         .curTheme
+                                            //         .text15,
                                             onPressed: () {
                                               AppDialogs.showConfirmDialog(
                                                   context,
@@ -134,13 +134,13 @@ class AccountDetailsSheet {
                                                     StateContainer.of(context)
                                                         .curTheme
                                                         .text),
-                                            padding: EdgeInsets.all(13.0),
-                                            shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(
-                                                        100.0)),
-                                            materialTapTargetSize:
-                                                MaterialTapTargetSize.padded,
+                                            // padding: EdgeInsets.all(13.0),
+                                            // shape: RoundedRectangleBorder(
+                                            //     borderRadius:
+                                            //         BorderRadius.circular(
+                                            //             100.0)),
+                                            // materialTapTargetSize:
+                                            //     MaterialTapTargetSize.padded,
                                           )),
                                 // The header of the sheet
                                 Container(

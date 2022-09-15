@@ -50,17 +50,17 @@ class _IntroPasswordOnLaunchState extends State<IntroPasswordOnLaunch> {
                               start: smallScreen(context) ? 15 : 20),
                           height: 50,
                           width: 50,
-                          child: FlatButton(
-                              highlightColor:
-                                  StateContainer.of(context).curTheme.text15,
-                              splashColor:
-                                  StateContainer.of(context).curTheme.text15,
+                          child: TextButton(
+                              // highlightColor:
+                              //     StateContainer.of(context).curTheme.text15,
+                              // splashColor:
+                              //     StateContainer.of(context).curTheme.text15,
                               onPressed: () {
                                 Navigator.pop(context);
                               },
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(50.0)),
-                              padding: EdgeInsets.all(0.0),
+                              // shape: RoundedRectangleBorder(
+                              //     borderRadius: BorderRadius.circular(50.0)),
+                              // padding: EdgeInsets.all(0.0),
                               child: Icon(AppIcons.back,
                                   color:
                                       StateContainer.of(context).curTheme.text,

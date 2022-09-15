@@ -223,16 +223,16 @@ class _AppPopupButtonState extends State<AppPopupButton> {
             width: (MediaQuery.of(context).size.width - 42) / 2,
             margin: EdgeInsetsDirectional.only(
                 start: 7, top: popupMarginBottom, end: 14.0),
-            child: FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(100.0)),
-              color: StateContainer.of(context).wallet != null &&
-                      StateContainer.of(context).wallet.accountBalance >
-                          BigInt.zero
-                  ? isSendButtonColorPrimary
-                      ? StateContainer.of(context).curTheme.primary
-                      : StateContainer.of(context).curTheme.success
-                  : StateContainer.of(context).curTheme.primary60,
+            child: TextButton(
+              // shape: RoundedRectangleBorder(
+              //     borderRadius: BorderRadius.circular(100.0)),
+              // color: StateContainer.of(context).wallet != null &&
+              //         StateContainer.of(context).wallet.accountBalance >
+              //             BigInt.zero
+              //     ? isSendButtonColorPrimary
+              //         ? StateContainer.of(context).curTheme.primary
+              //         : StateContainer.of(context).curTheme.success
+              //     : StateContainer.of(context).curTheme.primary60,
               child: AutoSizeText(
                 AppLocalization.of(context).send,
                 textAlign: TextAlign.center,
@@ -251,16 +251,16 @@ class _AppPopupButtonState extends State<AppPopupButton> {
                               StateContainer.of(context).curCurrency));
                 }
               },
-              highlightColor: StateContainer.of(context).wallet != null &&
-                      StateContainer.of(context).wallet.accountBalance >
-                          BigInt.zero
-                  ? StateContainer.of(context).curTheme.background40
-                  : Colors.transparent,
-              splashColor: StateContainer.of(context).wallet != null &&
-                      StateContainer.of(context).wallet.accountBalance >
-                          BigInt.zero
-                  ? StateContainer.of(context).curTheme.background40
-                  : Colors.transparent,
+              // highlightColor: StateContainer.of(context).wallet != null &&
+              //         StateContainer.of(context).wallet.accountBalance >
+              //             BigInt.zero
+              //     ? StateContainer.of(context).curTheme.background40
+              //     : Colors.transparent,
+              // splashColor: StateContainer.of(context).wallet != null &&
+              //         StateContainer.of(context).wallet.accountBalance >
+              //             BigInt.zero
+              //     ? StateContainer.of(context).curTheme.background40
+              //     : Colors.transparent,
             ),
           ),
         ),

@@ -228,20 +228,20 @@ class _ContactsListState extends State<ContactsList> {
                           height: 40,
                           width: 40,
                           margin: EdgeInsets.only(right: 10, left: 10),
-                          child: FlatButton(
-                              highlightColor:
-                                  StateContainer.of(context).curTheme.text15,
-                              splashColor:
-                                  StateContainer.of(context).curTheme.text15,
+                          child: TextButton(
+                              // highlightColor:
+                              //     StateContainer.of(context).curTheme.text15,
+                              // splashColor:
+                              //     StateContainer.of(context).curTheme.text15,
                               onPressed: () {
                                 setState(() {
                                   widget.contactsOpen = false;
                                 });
                                 widget.contactsController.reverse();
                               },
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(50.0)),
-                              padding: EdgeInsets.all(8.0),
+                              // shape: RoundedRectangleBorder(
+                              //     borderRadius: BorderRadius.circular(50.0)),
+                              // padding: EdgeInsets.all(8.0),
                               child: Icon(AppIcons.back,
                                   color:
                                       StateContainer.of(context).curTheme.text,
@@ -261,17 +261,17 @@ class _ContactsListState extends State<ContactsList> {
                           height: 40,
                           width: 40,
                           margin: EdgeInsetsDirectional.only(end: 5),
-                          child: FlatButton(
-                              highlightColor:
-                                  StateContainer.of(context).curTheme.text15,
-                              splashColor:
-                                  StateContainer.of(context).curTheme.text15,
+                          child: TextButton(
+                              // highlightColor:
+                              //     StateContainer.of(context).curTheme.text15,
+                              // splashColor:
+                              //     StateContainer.of(context).curTheme.text15,
                               onPressed: () {
                                 _importContacts();
                               },
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(50.0)),
-                              padding: EdgeInsets.all(8.0),
+                              // shape: RoundedRectangleBorder(
+                              //     borderRadius: BorderRadius.circular(50.0)),
+                              // padding: EdgeInsets.all(8.0),
                               child: Icon(AppIcons.import_icon,
                                   color:
                                       StateContainer.of(context).curTheme.text,
@@ -282,17 +282,17 @@ class _ContactsListState extends State<ContactsList> {
                           height: 40,
                           width: 40,
                           margin: EdgeInsetsDirectional.only(end: 20),
-                          child: FlatButton(
-                              highlightColor:
-                                  StateContainer.of(context).curTheme.text15,
-                              splashColor:
-                                  StateContainer.of(context).curTheme.text15,
+                          child: TextButton(
+                              // highlightColor:
+                              //     StateContainer.of(context).curTheme.text15,
+                              // splashColor:
+                              //     StateContainer.of(context).curTheme.text15,
                               onPressed: () {
                                 _exportContacts();
                               },
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(50.0)),
-                              padding: EdgeInsets.all(8.0),
+                              // shape: RoundedRectangleBorder(
+                              //     borderRadius: BorderRadius.circular(50.0)),
+                              // padding: EdgeInsets.all(8.0),
                               child: Icon(AppIcons.export_icon,
                                   color:
                                       StateContainer.of(context).curTheme.text,
@@ -397,12 +397,12 @@ class _ContactsListState extends State<ContactsList> {
   }
 
   Widget buildSingleContact(BuildContext context, Contact contact) {
-    return FlatButton(
+    return TextButton(
       onPressed: () {
         ContactDetailsSheet(contact, documentsDirectory)
             .mainBottomSheet(context);
       },
-      padding: EdgeInsets.all(0.0),
+      // padding: EdgeInsets.all(0.0),
       child: Column(children: <Widget>[
         Divider(
           height: 2,

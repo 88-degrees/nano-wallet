@@ -854,7 +854,7 @@ class _SendSheetState extends State<SendSheet> {
         Container(
           height: 42,
           width: double.infinity - 5,
-          child: FlatButton(
+          child: TextButton(
             onPressed: () {
               _sendAddressController.text = contact.name;
               _sendAddressFocusNode.unfocus();

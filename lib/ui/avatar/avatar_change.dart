@@ -107,18 +107,18 @@ class _AvatarChangePageState extends State<AvatarChangePage> {
                               start: smallScreen(context) ? 15 : 20),
                           height: 50,
                           width: 50,
-                          child: FlatButton(
-                              highlightColor:
-                                  StateContainer.of(context).curTheme.text15,
-                              splashColor:
-                                  StateContainer.of(context).curTheme.text15,
+                          child: TextButton(
+                              // highlightColor:
+                              //     StateContainer.of(context).curTheme.text15,
+                              // splashColor:
+                              //     StateContainer.of(context).curTheme.text15,
                               onPressed: () {
                                 Navigator.of(context)
                                     .popUntil((route) => route.isFirst);
                               },
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(50.0)),
-                              padding: EdgeInsets.all(0.0),
+                              // shape: RoundedRectangleBorder(
+                              //     borderRadius: BorderRadius.circular(50.0)),
+                              // padding: EdgeInsets.all(0.0),
                               child: Icon(AppIcons.back,
                                   color:
                                       StateContainer.of(context).curTheme.text,
@@ -240,11 +240,11 @@ class _AvatarChangePageState extends State<AvatarChangePage> {
                                             .curTheme
                                             .primary20),
                               ),
-                              child: FlatButton(
-                                highlightColor:
-                                    StateContainer.of(context).curTheme.text15,
-                                splashColor:
-                                    StateContainer.of(context).curTheme.text15,
+                              child: TextButton(
+                                // highlightColor:
+                                //     StateContainer.of(context).curTheme.text15,
+                                // splashColor:
+                                //     StateContainer.of(context).curTheme.text15,
                                 onPressed: nonce != null
                                     ? () {
                                         if (nonce == null || this.loading) {
@@ -266,9 +266,9 @@ class _AvatarChangePageState extends State<AvatarChangePage> {
                                         }
                                       }
                                     : null,
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(50.0)),
-                                padding: EdgeInsetsDirectional.only(end: 4),
+                                // shape: RoundedRectangleBorder(
+                                //     borderRadius: BorderRadius.circular(50.0)),
+                                // padding: EdgeInsetsDirectional.only(end: 4),
                                 child: Icon(AppIcons.back,
                                     color: nonce != null && !this.loading
                                         ? StateContainer.of(context)
@@ -293,11 +293,11 @@ class _AvatarChangePageState extends State<AvatarChangePage> {
                                         .curTheme
                                         .primary),
                               ),
-                              child: FlatButton(
-                                highlightColor:
-                                    StateContainer.of(context).curTheme.text15,
-                                splashColor:
-                                    StateContainer.of(context).curTheme.text15,
+                              child: TextButton(
+                                // highlightColor:
+                                //     StateContainer.of(context).curTheme.text15,
+                                // splashColor:
+                                //     StateContainer.of(context).curTheme.text15,
                                 onPressed: () {
                                   if (this.loading) {
                                     return;
@@ -315,9 +315,9 @@ class _AvatarChangePageState extends State<AvatarChangePage> {
                                     });
                                   }
                                 },
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(50.0)),
-                                padding: EdgeInsetsDirectional.only(start: 4),
+                                // shape: RoundedRectangleBorder(
+                                //     borderRadius: BorderRadius.circular(50.0)),
+                                // padding: EdgeInsetsDirectional.only(start: 4),
                                 child: Transform(
                                   alignment: Alignment.center,
                                   transform: Matrix4.rotationY(math.pi),
