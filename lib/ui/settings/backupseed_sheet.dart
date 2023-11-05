@@ -2,17 +2,18 @@ import 'dart:async';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
-import 'package:natrium_wallet/app_icons.dart';
-import 'package:natrium_wallet/localization.dart';
-import 'package:natrium_wallet/appstate_container.dart';
-import 'package:natrium_wallet/dimens.dart';
-import 'package:natrium_wallet/ui/widgets/mnemonic_display.dart';
-import 'package:natrium_wallet/ui/widgets/plainseed_display.dart';
-import 'package:natrium_wallet/ui/widgets/sheets.dart';
-import 'package:natrium_wallet/ui/widgets/buttons.dart';
-import 'package:natrium_wallet/styles.dart';
-import 'package:natrium_wallet/util/caseconverter.dart';
-import 'package:natrium_wallet/util/user_data_util.dart';
+import 'package:natrium_wallet_flutter/app_icons.dart';
+import 'package:natrium_wallet_flutter/localization.dart';
+import 'package:natrium_wallet_flutter/appstate_container.dart';
+import 'package:natrium_wallet_flutter/dimens.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/mnemonic_display.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/plainseed_display.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/sheets.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
+import 'package:natrium_wallet_flutter/styles.dart';
+import 'package:natrium_wallet_flutter/util/caseconverter.dart';
+import 'package:natrium_wallet_flutter/util/user_data_util.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/flat_button.dart';
 
 class AppSeedBackupSheet {
   String _seed;
@@ -75,17 +76,18 @@ class AppSeedBackupSheet {
                                   Container(
                                     margin: EdgeInsets.only(top: 15.0),
                                     constraints: BoxConstraints(
-                                        maxWidth: MediaQuery.of(context)
-                                                .size
-                                                .width -
-                                            140),
+                                        maxWidth:
+                                            MediaQuery.of(context).size.width -
+                                                140),
                                     child: Column(
                                       children: <Widget>[
                                         AutoSizeText(
                                           CaseChange.toUpperCase(
                                               showMnemonic
-                                                  ? AppLocalization.of(context).secretPhrase
-                                                  : AppLocalization.of(context).seed,
+                                                  ? AppLocalization.of(context)
+                                                      .secretPhrase
+                                                  : AppLocalization.of(context)
+                                                      .seed,
                                               context),
                                           style: AppStyles.textStyleHeader(
                                               context),
@@ -166,10 +168,13 @@ class AppSeedBackupSheet {
                                         ? AppButtonType.SUCCESS
                                         : AppButtonType.PRIMARY,
                                     _mnemonicCopied
-                                        ? AppLocalization.of(context).secretPhraseCopied
-                                        : AppLocalization.of(context).secretPhraseCopy,
+                                        ? AppLocalization.of(context)
+                                            .secretPhraseCopied
+                                        : AppLocalization.of(context)
+                                            .secretPhraseCopy,
                                     Dimens.BUTTON_BOTTOM_DIMENS, onPressed: () {
-                                  UserDataUtil.setSecureClipboardItem(_mnemonic.join(" "));
+                                  UserDataUtil.setSecureClipboardItem(
+                                      _mnemonic.join(" "));
                                   setState(() {
                                     // Set copied style
                                     _mnemonicCopied = true;
@@ -196,7 +201,10 @@ class AppSeedBackupSheet {
                                     _seedCopied
                                         ? AppButtonType.SUCCESS
                                         : AppButtonType.PRIMARY,
-                                    _seedCopied ? AppLocalization.of(context).seedCopiedShort : AppLocalization.of(context).copySeed,
+                                    _seedCopied
+                                        ? AppLocalization.of(context)
+                                            .seedCopiedShort
+                                        : AppLocalization.of(context).copySeed,
                                     Dimens.BUTTON_BOTTOM_DIMENS, onPressed: () {
                                   UserDataUtil.setSecureClipboardItem(_seed);
                                   setState(() {

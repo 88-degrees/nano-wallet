@@ -10,20 +10,21 @@ import 'package:path_provider/path_provider.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:share/share.dart';
 
-import 'package:natrium_wallet/service_locator.dart';
-import 'package:natrium_wallet/dimens.dart';
-import 'package:natrium_wallet/styles.dart';
-import 'package:natrium_wallet/app_icons.dart';
-import 'package:natrium_wallet/appstate_container.dart';
-import 'package:natrium_wallet/localization.dart';
-import 'package:natrium_wallet/bus/events.dart';
-import 'package:natrium_wallet/model/address.dart';
-import 'package:natrium_wallet/model/db/appdb.dart';
-import 'package:natrium_wallet/model/db/contact.dart';
-import 'package:natrium_wallet/ui/contacts/add_contact.dart';
-import 'package:natrium_wallet/ui/contacts/contact_details.dart';
-import 'package:natrium_wallet/ui/widgets/buttons.dart';
-import 'package:natrium_wallet/ui/util/ui_util.dart';
+import 'package:natrium_wallet_flutter/service_locator.dart';
+import 'package:natrium_wallet_flutter/dimens.dart';
+import 'package:natrium_wallet_flutter/styles.dart';
+import 'package:natrium_wallet_flutter/app_icons.dart';
+import 'package:natrium_wallet_flutter/appstate_container.dart';
+import 'package:natrium_wallet_flutter/localization.dart';
+import 'package:natrium_wallet_flutter/bus/events.dart';
+import 'package:natrium_wallet_flutter/model/address.dart';
+import 'package:natrium_wallet_flutter/model/db/appdb.dart';
+import 'package:natrium_wallet_flutter/model/db/contact.dart';
+import 'package:natrium_wallet_flutter/ui/contacts/add_contact.dart';
+import 'package:natrium_wallet_flutter/ui/contacts/contact_details.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/flat_button.dart';
+import 'package:natrium_wallet_flutter/ui/util/ui_util.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flare_flutter/flare_actor.dart';
 
@@ -182,7 +183,7 @@ class _ContactsListState extends State<ContactsList> {
               AppLocalization.of(context).noContactsImport, context);
         }
       } catch (e) {
-        log.e(e.toString(), e);
+        log.e(e.toString(), error: e);
         UIUtil.showSnackbar(
             AppLocalization.of(context).contactsImportErr, context);
         return;
