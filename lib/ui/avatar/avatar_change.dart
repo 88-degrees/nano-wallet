@@ -5,6 +5,7 @@ import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_svg/flutter_svg.dart';
+<<<<<<< HEAD
 import 'package:natrium_wallet/appstate_container.dart';
 import 'package:natrium_wallet/dimens.dart';
 import 'package:natrium_wallet/styles.dart';
@@ -15,6 +16,19 @@ import 'package:natrium_wallet/ui/send/send_confirm_sheet.dart';
 import 'package:natrium_wallet/ui/util/ui_util.dart';
 import 'package:natrium_wallet/ui/widgets/buttons.dart';
 import 'package:natrium_wallet/ui/widgets/sheet_util.dart';
+=======
+import 'package:natrium_wallet_flutter/appstate_container.dart';
+import 'package:natrium_wallet_flutter/dimens.dart';
+import 'package:natrium_wallet_flutter/styles.dart';
+import 'package:natrium_wallet_flutter/localization.dart';
+import 'package:natrium_wallet_flutter/app_icons.dart';
+import 'package:natrium_wallet_flutter/ui/avatar/nonce_response.dart';
+import 'package:natrium_wallet_flutter/ui/send/send_confirm_sheet.dart';
+import 'package:natrium_wallet_flutter/ui/util/ui_util.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/flat_button.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/sheet_util.dart';
+>>>>>>> 1e046ea64a23d54ec30138361d68ed5993a1efd5
 import 'dart:math' as math;
 
 const String NATRICON_ADDRESS =

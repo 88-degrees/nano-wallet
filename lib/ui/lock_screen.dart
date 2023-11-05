@@ -1,23 +1,24 @@
 import 'package:event_taxi/event_taxi.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:natrium_wallet/app_icons.dart';
-import 'package:natrium_wallet/bus/fcm_update_event.dart';
-import 'package:natrium_wallet/service_locator.dart';
-import 'package:natrium_wallet/model/authentication_method.dart';
-import 'package:natrium_wallet/model/vault.dart';
-import 'package:natrium_wallet/styles.dart';
-import 'package:natrium_wallet/ui/widgets/dialog.dart';
-import 'package:natrium_wallet/util/biometrics.dart';
-import 'package:natrium_wallet/util/nanoutil.dart';
-import 'package:natrium_wallet/util/sharedprefsutil.dart';
-import 'package:natrium_wallet/util/caseconverter.dart';
-import 'package:natrium_wallet/ui/widgets/buttons.dart';
-import 'package:natrium_wallet/ui/widgets/security.dart';
-import 'package:natrium_wallet/appstate_container.dart';
-import 'package:natrium_wallet/localization.dart';
-import 'package:natrium_wallet/dimens.dart';
-import 'package:natrium_wallet/ui/util/routes.dart';
+import 'package:natrium_wallet_flutter/app_icons.dart';
+import 'package:natrium_wallet_flutter/bus/fcm_update_event.dart';
+import 'package:natrium_wallet_flutter/service_locator.dart';
+import 'package:natrium_wallet_flutter/model/authentication_method.dart';
+import 'package:natrium_wallet_flutter/model/vault.dart';
+import 'package:natrium_wallet_flutter/styles.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/dialog.dart';
+import 'package:natrium_wallet_flutter/util/biometrics.dart';
+import 'package:natrium_wallet_flutter/util/nanoutil.dart';
+import 'package:natrium_wallet_flutter/util/sharedprefsutil.dart';
+import 'package:natrium_wallet_flutter/util/caseconverter.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/security.dart';
+import 'package:natrium_wallet_flutter/appstate_container.dart';
+import 'package:natrium_wallet_flutter/localization.dart';
+import 'package:natrium_wallet_flutter/dimens.dart';
+import 'package:natrium_wallet_flutter/ui/util/routes.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/flat_button.dart';
 
 class AppLockScreen extends StatefulWidget {
   @override

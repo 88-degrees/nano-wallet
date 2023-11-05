@@ -1,11 +1,12 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:natrium_wallet/appstate_container.dart';
-import 'package:natrium_wallet/app_icons.dart';
-import 'package:natrium_wallet/dimens.dart';
-import 'package:natrium_wallet/localization.dart';
-import 'package:natrium_wallet/styles.dart';
-import 'package:natrium_wallet/ui/widgets/buttons.dart';
+import 'package:natrium_wallet_flutter/appstate_container.dart';
+import 'package:natrium_wallet_flutter/app_icons.dart';
+import 'package:natrium_wallet_flutter/dimens.dart';
+import 'package:natrium_wallet_flutter/localization.dart';
+import 'package:natrium_wallet_flutter/styles.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/flat_button.dart';
 
 class IntroBackupSafetyPage extends StatefulWidget {
   @override

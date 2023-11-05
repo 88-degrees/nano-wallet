@@ -10,29 +10,30 @@ import 'package:natrium_wallet/bus/events.dart';
 import 'package:natrium_wallet/network/account_service.dart';
 import 'package:natrium_wallet/network/model/response/process_response.dart';
 
-import 'package:natrium_wallet/service_locator.dart';
-import 'package:natrium_wallet/appstate_container.dart';
-import 'package:natrium_wallet/localization.dart';
-import 'package:natrium_wallet/dimens.dart';
-import 'package:natrium_wallet/ui/util/ui_util.dart';
-import 'package:natrium_wallet/ui/widgets/app_simpledialog.dart';
-import 'package:natrium_wallet/ui/widgets/sheet_util.dart';
-import 'package:natrium_wallet/ui/widgets/sheets.dart';
-import 'package:natrium_wallet/ui/widgets/buttons.dart';
-import 'package:natrium_wallet/ui/widgets/dialog.dart';
-import 'package:natrium_wallet/ui/widgets/security.dart';
-import 'package:natrium_wallet/ui/util/routes.dart';
-import 'package:natrium_wallet/styles.dart';
-import 'package:natrium_wallet/app_icons.dart';
-import 'package:natrium_wallet/util/nanoutil.dart';
-import 'package:natrium_wallet/util/ninja/ninja_node.dart';
-import 'package:natrium_wallet/util/sharedprefsutil.dart';
-import 'package:natrium_wallet/util/biometrics.dart';
-import 'package:natrium_wallet/util/numberutil.dart';
-import 'package:natrium_wallet/util/hapticutil.dart';
-import 'package:natrium_wallet/util/caseconverter.dart';
-import 'package:natrium_wallet/model/authentication_method.dart';
-import 'package:natrium_wallet/model/vault.dart';
+import 'package:natrium_wallet_flutter/service_locator.dart';
+import 'package:natrium_wallet_flutter/appstate_container.dart';
+import 'package:natrium_wallet_flutter/localization.dart';
+import 'package:natrium_wallet_flutter/dimens.dart';
+import 'package:natrium_wallet_flutter/ui/util/ui_util.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/app_simpledialog.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/sheet_util.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/sheets.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/flat_button.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/dialog.dart';
+import 'package:natrium_wallet_flutter/ui/widgets/security.dart';
+import 'package:natrium_wallet_flutter/ui/util/routes.dart';
+import 'package:natrium_wallet_flutter/styles.dart';
+import 'package:natrium_wallet_flutter/app_icons.dart';
+import 'package:natrium_wallet_flutter/util/nanoutil.dart';
+import 'package:natrium_wallet_flutter/util/ninja/ninja_node.dart';
+import 'package:natrium_wallet_flutter/util/sharedprefsutil.dart';
+import 'package:natrium_wallet_flutter/util/biometrics.dart';
+import 'package:natrium_wallet_flutter/util/numberutil.dart';
+import 'package:natrium_wallet_flutter/util/hapticutil.dart';
+import 'package:natrium_wallet_flutter/util/caseconverter.dart';
+import 'package:natrium_wallet_flutter/model/authentication_method.dart';
+import 'package:natrium_wallet_flutter/model/vault.dart';
 
 import 'changerepresentativemanualentry_sheet.dart';
 
@@ -318,7 +319,7 @@ class AppChangeRepresentativeSheet {
             AppLocalization.of(context).changeRepSucces, context);
         Navigator.of(context).popUntil(RouteUtils.withNameLike('/home'));
       } catch (e) {
-        sl.get<Logger>().e("Failed to change", e);
+        sl.get<Logger>().e("Failed to change", error: e);
         if (_animationOpen) {
           Navigator.of(context).pop();
         }
